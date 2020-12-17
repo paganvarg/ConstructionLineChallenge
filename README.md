@@ -31,3 +31,13 @@ There are two tests in the test project; one simple search for red shirts out of
 We would like you to send us a link to a git repository that we can access with your implementation.
 
 The whole exercise should not take more than an hour to implement.
+
+## Performance
+With my approach the search time remain pretty flat and oscillates around 25 miliseconds. Results on i7-6700 with 32GB of RAM:
+| Number of shirts  | Average search time   |
+|----|---|
+| 50K               | ~20ms                 |
+| 500K              | ~21ms                 |
+| 5M                | ~32ms                 |
+
+Obviously the time required to create the dictionary I use for the search increases significantly with the size.

@@ -15,6 +15,20 @@ namespace ConstructionLine.CodingChallenge
             Name = name;
         }
 
+        public byte GetSizeAsByte()
+        {
+            if (this == Small)
+            {
+                return 1;
+            }
+
+            if (this == Medium)
+            {
+                return 2;
+            }
+
+            return 4;
+        }
 
         public static Size Small = new Size(Guid.NewGuid(), "Small");
         public static Size Medium = new Size(Guid.NewGuid(), "Medium");

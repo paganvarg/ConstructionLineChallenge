@@ -19,5 +19,10 @@ namespace ConstructionLine.CodingChallenge
             Size = size;
             Color = color;
         }
+
+        public byte GetShirtDetailsAsByte()
+        {
+            return (byte)(Color.GetColorAsByte() + Size.GetSizeAsByte());
+        }
     }
 }

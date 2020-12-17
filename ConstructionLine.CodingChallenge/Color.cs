@@ -15,6 +15,30 @@ namespace ConstructionLine.CodingChallenge
             Name = name;
         }
 
+        public byte GetColorAsByte()
+        {
+            if (this == Red)
+            {
+                return 8;
+            }
+
+            if (this == Blue)
+            {
+                return 16;
+            }
+
+            if (this == Yellow)
+            {
+                return 32;
+            }
+
+            if (this == White)
+            {
+                return 64;
+            }
+
+            return 128;
+        }
 
         public static Color Red = new Color(Guid.NewGuid(), "Red");
         public static Color Blue = new Color(Guid.NewGuid(), "Blue");
